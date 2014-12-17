@@ -124,8 +124,19 @@ task :install_vmail do
 
   puts ""
 
+  puts "Do you have sudo rights? [y]es, [n]o"
+  selection = STDIN.gets.strip
+  if selection == 'y'
+    run %{
+     sudo gem install vmail
+    }
+  else
+    puts "We will try to install vmail, might fail though"
+    run %{
+      gem install vmail
+    }
+  end
   run %{
-   sudo gem install vmail
    vmail -g
   }
 end
