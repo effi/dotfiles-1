@@ -1,1 +1,3 @@
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'vim-scripts/tcl.vim--smithfield-indent'
+Plugin 'vim-scripts/tcl.vim--smithfield'
