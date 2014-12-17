@@ -24,6 +24,10 @@ task :install => [:submodule_init, :submodules] do
     file_operation(Dir.glob('{vim,vimrc}'))
     Rake::Task["install_vundle"].execute
   end
+  if want_to_install?('vmail and configuration')
+    file_operation(Dir.glob('vmail/*'))
+    Rake::Task["install_vmail"].execute
+  end
 
   Rake::Task["install_prezto"].execute
 
@@ -109,6 +113,23 @@ task :install_vundle do
 
   Vundle::update_vundle
 end
+desc "installs vmail client"
+task :install_vmail do
+  puts "======================================================"
+  puts "Installing and updating vmail client."
+  puts "The installer will now proceed with installing vmail"
+  puts "gem. This will require a sudo password."
+  puts "This can take some time!"
+  puts "======================================================"
+
+  puts ""
+
+  run %{
+   sudo gem install vmail
+   vmail -g
+  }
+end
+
 
 task :default => 'install'
 

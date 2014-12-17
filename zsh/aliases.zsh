@@ -208,3 +208,12 @@ alias feMount='hdiutil attach -mountpoint $HOME/foam $HOME/foam.sparsebundle'
 export PWID_LICENSE_FILE=@lizserv.iag.uni-stuttgart.de 
 export GRIDGEN_HOME='/Applications/GridgenV15'
 alias gridgen='/Applications/GridgenV15/gridgen'
+alias bwuni="ssh -x st_lrt70667@bwunicluster.scc.kit.edu"
+alias unbenddir="cd ~/Documents/Studienarbeit\ IAG/Unbend/"
+
+# Vmail aliase
+alias antworten="vmail GTD/Antworten"
+alias lesen="vmail GTD/Lesen"
+alias waiting="vmail GTD/Waiting"
+alias referenz="vmail GTD/Refernzmaterieal"
+alias rechnung="vmail GTD/Rechnungen"
