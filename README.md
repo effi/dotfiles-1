@@ -7,8 +7,9 @@
 
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
+    # This is a personalized fork!
 
-    sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+    sh -c "`curl -fsSL https://raw.github.com/effi/yadr/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
