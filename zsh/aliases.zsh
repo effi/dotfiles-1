@@ -190,3 +190,21 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+# Openfoam und IAG
+alias of222='. ~/OpenFOAM/OpenFOAM-2.2.2/etc/bashrc';  
+alias of230=" . ~/OpenFOAM/OpenFOAM-2.3.0/etc/bashrc";   
+alias fe30='. $HOME/foam/foam-extend-3.0/etc/bashrc'
+alias fe31='. $HOME/foam/foam-extend-3.1/etc/bashrc'
+alias paraFoam="paraFoam -builtin"
+alias hprandtl="ssh -X iaghuang@prandtl.iag.uni-stuttgart.de"
+alias t="tec360"
+alias o="open -a"
+alias pointwise="/Applications/Pointwise/PointwiseV17.2R2/macosx/Pointwise.app/Contents/MacOS/Pointwise"
+alias prandtl='ssh -X iaghuang@prandtl.iag.uni-stuttgart.de'
+alias dprandtl='ssh -X iagdohno@prandtl.iag.uni-stuttgart.de'
+alias ofMount='hdiutil attach -mountpoint $HOME/OpenFOAM $HOME/OpenFOAM.sparsebundle'
+alias feMount='hdiutil attach -mountpoint $HOME/foam $HOME/foam.sparsebundle'
+export PWID_LICENSE_FILE=@lizserv.iag.uni-stuttgart.de 
+export GRIDGEN_HOME='/Applications/GridgenV15'
+alias gridgen='/Applications/GridgenV15/gridgen'
