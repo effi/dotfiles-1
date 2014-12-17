@@ -157,3 +157,9 @@ map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 
 " ,hp = html preview
 map <silent> ,hp :!open -a Safari %<CR><CR>
+
+
+" ============================
+" Nerdtree
+" ============================
+nmap <leader>nt :NERDTree<CR>
