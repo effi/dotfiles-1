@@ -14,3 +14,5 @@ vim/sessions
 .netrwhist
 bin/subl
 tags
+vmail/vmail/default/vmail.*
+
