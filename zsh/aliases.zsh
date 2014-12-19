@@ -217,3 +217,7 @@ alias lesen="vmail GTD/Lesen"
 alias waiting="vmail GTD/Waiting"
 alias referenz="vmail GTD/Refernzmaterieal"
 alias rechnung="vmail GTD/Rechnungen"
+
+
+# vim plugin dev
+alias vundleUpdate='cd ~/.yadr/;rake install_vundle; cd -'
