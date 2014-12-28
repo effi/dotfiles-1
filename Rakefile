@@ -115,30 +115,7 @@ task :install_vundle do
 end
 desc "installs vmail client"
 task :install_vmail do
-  puts "======================================================"
-  puts "Installing and updating vmail client."
-  puts "The installer will now proceed with installing vmail"
-  puts "gem. This will require a sudo password."
-  puts "This can take some time!"
-  puts "======================================================"
-
-  puts ""
-
-  puts "Do you have sudo rights? [y]es, [n]o"
-  selection = STDIN.gets.strip
-  if selection == 'y'
-    run %{
-     sudo gem install vmail
-    }
-  else
-    puts "We will try to install vmail, might fail though"
-    run %{
-      gem install vmail
-    }
-  end
-  run %{
-   vmail -g
-  }
+  install_vmail
 end
 
 
@@ -207,6 +184,45 @@ def install_homebrew
   run %{brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit}
   puts
   puts
+end
+def install_vmail
+  run %{which vmail}
+  unless $?.success?
+    puts "======================================================"
+    puts "Installing and updating vmail client."
+    puts "The installer will now proceed with installing vmail"
+    puts "gem. This will require a sudo password."
+    puts "======================================================"
+    puts "This can take some time!"
+    puts "Do you want to skip this? [y]es, [n]o"
+    selection = STDIN.gets.strip
+    if selection == 'y'
+      puts "Do you have sudo rights? [y]es, [n]o"
+      selection = STDIN.gets.strip
+      if selection == 'y'
+        run %{
+         sudo gem install vmail
+        }
+      else
+        puts "We will try to install vmail, might fail though"
+        run %{
+          gem install vmail
+        }
+      end
+    end
+    run %{
+     vmail -g
+    } 
+    puts "======================================================"
+  end
+
+  puts
+  puts "======================================================"
+  puts "Updating the installed vmail version"
+  puts "======================================================"
+  run %{
+    gem update vmail
+  } 
 end
 
 def install_fonts
