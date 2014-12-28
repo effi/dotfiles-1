@@ -1,7 +1,7 @@
 "vmail commands
-imap <leader>ma GTD/Antworten<CR> 
-imap <leader>ms GTD/Lesen<CR>
-imap <leader>md GTD/Waiting<CR>
-imap <leader>mf GTD/Referenzmaterial<CR>
-imap <leader>mb GTD/Rechnungen<CR>
+imap <leader>ma [Mailbox]/Antworten<CR>
+imap <leader>ms [Mailbox]/Lesen<CR>
+imap <leader>md [Mailbox]/Waiting<CR>
+imap <leader>mf [Mailbox]/Referenzmaterial<CR>
+imap <leader>mb [Mailbox]/Rechnungen<CR>
 

@@ -64,6 +64,7 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+set timeoutlen=500
 
 filetype plugin on
 filetype indent on

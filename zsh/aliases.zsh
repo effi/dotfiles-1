@@ -59,6 +59,8 @@ alias :q='exit'
 
 # vimrc editing
 alias ve='vim ~/.vimrc'
+alias vm='vim ~/.vim/settings/vmail.vim'
+alias vs="cd ~/.vim/settings && ls"
 
 # zsh profile editing
 alias ze='vim ~/.zshrc'
@@ -201,23 +203,42 @@ alias hprandtl="ssh -X iaghuang@prandtl.iag.uni-stuttgart.de"
 alias t="tec360"
 alias o="open -a"
 alias pointwise="/Applications/Pointwise/PointwiseV17.2R2/macosx/Pointwise.app/Contents/MacOS/Pointwise"
-alias prandtl='ssh -X iaghuang@prandtl.iag.uni-stuttgart.de'
+alias prandtl='ssh -X iagleinb@prandtl.iag.uni-stuttgart.de'
 alias dprandtl='ssh -X iagdohno@prandtl.iag.uni-stuttgart.de'
-alias ofMount='hdiutil attach -mountpoint $HOME/OpenFOAM $HOME/OpenFOAM.sparsebundle'
+alias unigateway='ssh -X iagleinb@bernoullie.iag.uni-stuttgart.de'
+alias ofMount='hdiutil attach -mountpoint $HOME/OpenFOAM $HOME/OpenFOAM2.sparsebundle'
+alias ofMount2='hdiutil attach -mountpoint $HOME/OpenFOAM $HOME/OpenFOAM.sparsebundle'
 alias feMount='hdiutil attach -mountpoint $HOME/foam $HOME/foam.sparsebundle'
 export PWID_LICENSE_FILE=@lizserv.iag.uni-stuttgart.de 
 export GRIDGEN_HOME='/Applications/GridgenV15'
 alias gridgen='/Applications/GridgenV15/gridgen'
 alias bwuni="ssh -x st_lrt70667@bwunicluster.scc.kit.edu"
 alias unbenddir="cd ~/Documents/Studienarbeit\ IAG/Unbend/"
+alias bwuni_scp="scp st_lrt70667@bwunicluster.scc.kit.edu:"
+
+# easier open foam boundary editing
+alias be="vim 0/U 0/p constant/polyMesh/boundary"
+
+alias scpToBwuni="/bin/bash ~/bin/scpToBwuni.sh"
+alias scpFromBwuni="/bin/bash ~/bin/scpFromBwuni.sh"
+
+alias bwp="cd /Volumes/bwuni/"
 
 # Vmail aliase
-alias antworten="vmail GTD/Antworten"
-alias lesen="vmail GTD/Lesen"
-alias waiting="vmail GTD/Waiting"
-alias referenz="vmail GTD/Refernzmaterieal"
-alias rechnung="vmail GTD/Rechnungen"
-
+alias antworten="vmail [Mailbox]/Antworten"
+alias lesen="vmail [Mailbox]/Lesen"
+alias waiting="vmail [Mailbox]/Waiting"
+alias referenz="vmail [Mailbox]/Refernzmaterieal"
+alias rechnung="vmail [Mailbox]/Rechnungen"
+# alias antworten="vmail GTD/Antworten"
+# alias lesen="vmail GTD/Lesen"
+# alias waiting="vmail GTD/Waiting"
+# alias referenz="vmail GTD/Refernzmaterieal"
+# alias rechnung="vmail GTD/Rechnungen"
+#
 
 # vim plugin dev
 alias vundleUpdate='cd ~/.yadr/;rake install_vundle; cd -'
+
+# dropbox cli
+alias dropbox='~/bin/dropbox.py'

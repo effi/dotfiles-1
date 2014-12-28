@@ -65,9 +65,9 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
 
 " Resize windows with arrow keys
-" nnoremap <D-Up> <C-w>+
+nnoremap <D-Up> <D-=>
 " nnoremap <D-+> <C-w>+
-nnoremap <D-Down> <C-w>-
+nnoremap <D-Down> <D-->
 nnoremap <D-Left> <C-w><
 nnoremap <D-Right>  <C-w>>
 

@@ -76,7 +76,7 @@ imap <C-a> <esc>wa
 " ==== NERD tree
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
-nmap <silent> <leader>nt :NERDTree<CR>
+nmap <silent> <leader>nt :NERDTreeToggle<CR>
 
 " ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
@@ -85,7 +85,8 @@ nmap <silent> ,qo :copen<CR>
 
 "Move back and forth through previous and next buffers
 "with ,z and ,x
-nnoremap <silent> ,z :bp<CR>
+" nnoremap <silent> ,z :bp<CR>
+nnoremap <silent> ,y :bp<CR>
 nnoremap <silent> ,x :bn<CR>
 
 " ==============================
@@ -166,3 +167,6 @@ map <silent> ,hp :!open -a Safari %<CR><CR>
 nmap <leader>cw bcw
 nmap <leader>cW BcW
 
+imap jk <esc>
+imap kj <esc>
+imap jj <esc>

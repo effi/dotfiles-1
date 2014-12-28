@@ -14,6 +14,15 @@ let g:neocomplete#auto_completion_start_length = 3
 
 " Map standard Ctrl-N completion to Cmd-Space
 inoremap <D-Space> <C-n>
+" Map Tab to autocomplete aswell
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ neocomplete#start_manual_complete()
+function! s:check_back_space() "{{{
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}"
+
 
 " This makes sure we use neocomplete completefunc instead of
 " the one in rails.vim, otherwise this plugin will crap out.
