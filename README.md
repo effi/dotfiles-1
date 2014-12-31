@@ -7,7 +7,7 @@
 
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
-    # This is a personalized fork!
+    # This is a personalized fork, with vmail!
 
     sh -c "`curl -fsSL https://raw.github.com/effi/yadr/master/install.sh`"
 
