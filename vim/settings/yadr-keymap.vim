@@ -85,7 +85,7 @@ nmap <silent> ,qo :copen<CR>
 
 "Move back and forth through previous and next buffers
 "with ,z and ,x
-" nnoremap <silent> ,z :bp<CR>
+nnoremap <silent> ,z :bp<CR>
 nnoremap <silent> ,y :bp<CR>
 nnoremap <silent> ,x :bn<CR>
 
@@ -164,9 +164,12 @@ map <silent> ,hp :!open -a Safari %<CR><CR>
 " ============================
 " Change words
 " ============================
-nmap <leader>cw bcw
-nmap <leader>cW BcW
+nmap ,cw bcw
+nmap ,cW BcW
 
+" ============================
+" Slash-exit
+" ============================
 imap jk <esc>
 imap kj <esc>
 imap jj <esc>

@@ -215,6 +215,8 @@ alias gridgen='/Applications/GridgenV15/gridgen'
 alias bwuni="ssh -x st_lrt70667@bwunicluster.scc.kit.edu"
 alias unbenddir="cd ~/Documents/Studienarbeit\ IAG/Unbend/"
 alias bwuni_scp="scp st_lrt70667@bwunicluster.scc.kit.edu:"
+alias fsize="du -hd 1 ."
+alias fsize2="du -hd 2 ."
 
 # easier open foam boundary editing
 alias be="vim 0/U 0/p constant/polyMesh/boundary"

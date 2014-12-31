@@ -1,5 +1,8 @@
+Bundle "effi/vim-glyph2-syntax"
 " syntax:vim
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-scripts/tcl.vim--smithfield-indent'
 Plugin 'vim-scripts/tcl.vim--smithfield'
 Plugin 'effi/vim-openfoam-syntax'
+"Plugin 'felipec/notmuch-vim'
+"Plugin 'vim-scripts/VimIRC.vim'
